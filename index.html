@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language learning</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="app">
+
+        <div class="block head">
+            <h1 class="head-title">ВИВЧАЄМО ІНОЗЕМНУ МОВУ</h1>
+        </div>
+
+        <div class="block card-block">
+            <p class="card-hint">Тисни на картку, щоб перевірити</p>
+            <div class="card" id="card">
+                <span class="word" id="word">word</span>
+            </div>
+            <p class="card-status" id="status"></p>
+        </div>
+
+        <div class="block nav-block">
+            <div class="arrow" id="prev">&#8592;</div>
+            <div class="step" id="step">1 / 20</div>
+            <div class="arrow" id="next">&#8594;</div>
+        </div>
+
+        <div class="block input-block">
+            <input type="text" id="answer" placeholder="Введіть переклад українською">
+            <p class="message" id="message"></p>
+        </div>
+
+        <div class="stats">
+            <div class="block stat stat-right">
+                <p class="stat-name">Вірно</p>
+                <p class="stat-value" id="rightCount">0</p>
+            </div>
+            <div class="block stat stat-wrong">
+                <p class="stat-name">Невірно</p>
+                <p class="stat-value" id="wrongCount">0</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <p class="modal-title">РЕЗУЛЬТАТ</p>
+            <p class="modal-level" id="level">Beginner</p>
+            <p class="modal-text" id="modalText">Правильних перекладів: 0 з 20</p>
+            <div class="modal-btn" id="restart">ПОЧАТИ ЗАНОВО</div>
+        </div>
+    </div>
+
+</body>
+</html>
